@@ -1,0 +1,213 @@
+{
+	"table": {
+		"columns": {
+			"api": {
+				"path": "Path",
+				"api_group": "APIGroup",
+				"method": "Method",
+				"description": "Description"
+			},
+			"menu": {
+				"menu_id": "MenuId",
+				"title": "Title",
+				"icon": "Icon",
+				"name": "RouteName",
+				"path": "RoutePath",
+				"component": "Component",
+				"sort": "Sort",
+				"parent_id": "ParentId",
+				"keep_alive": "KeepAlive",
+				"default_menu": "DefaultMenu",
+				"hidden": "Hidden",
+				"description": "Description"
+			},
+			"menu_group": {
+				"name": "Name",
+				"sort": "Sort",
+				"path": "Path",
+				"status": "Status"
+			},
+			"menu_btn": {
+				"name": "Name",
+				"desc": "Description"
+			},
+			"menu_parameter": {
+				"type": "Type",
+				"key": "Key",
+				"value": "Value"
+			},
+			"user": {
+				"user_name": "UserName",
+				"nick_name": "NickName",
+				"phone": "Phone",
+				"status": "Status",
+				"email": "Email",
+				"roles": "Roles",
+				"avatar": "Avatar"
+			},
+			"operation": {
+				"ip": "Ip",
+				"path": "RequestPath",
+				"method": "RequestMethod",
+				"status": "Status",
+				"latency": "Latency(ms)",
+				"agent": "Agent",
+				"error": "ErrorMessage",
+				"body": "RequestBody",
+				"resp": "ResponseBody"
+			},
+			"file": {
+				"file_origin_name": "FileOriginName",
+				"storage_engine": "StorageEngine"
+			},
+			"role": {
+				"role_id": "RoleId",
+				"name": "RoleName",
+				"label": "Label",
+				"order": "Order",
+				"description": "Description",
+				"status": "Status",
+				"parent_id": "ParentRoleId"
+			},
+			"dictionary_detail": {
+				"label": "Label",
+				"value": "Value",
+				"extend": "Extend",
+				"status": "Status",
+				"type": "Type",
+				"sort": "Sort"
+			},
+			"dictionary": {
+				"name": "Name",
+				"type": "Type",
+				"is_generate_file": "IsGenerateFile",
+				"status": "Status",
+				"desc": "Description"
+			},
+			"schedule": {
+				"task_name": "TaskName",
+				"cron_expression": "CronExpression",
+				"task_description": "TaskDescription",
+				"task_type": "TaskType",
+				"status": "Status",
+				"last_execute_time": "LastExecuteTime",
+				"next_execute_time": "NextExecuteTime",
+				"exec_type": "ExecType",
+				"task_params": "TaskParams",
+				"url": "Url",
+				"method": "Method",
+				"timeout": "Timeout (seconds)",
+				"function_name": "FunctionName",
+				"days_to_keep": "DaysToKeep",
+				"script_path": "ScriptPath",
+				"arguments": "Arguments (optional)",
+				"work_dir": "WorkDir(optional)"
+			},
+			"task_log": {
+				"task_id": "TaskID",
+				"execute_time": "ExecuteTime",
+				"execute_result": "ExecuteResult",
+				"execute_duration": "ExecuteDuration",
+				"error_message": "ErrorMessage",
+				"created_at": "RecordTime"
+			},
+			"common": {
+				"operation": "Operation",
+				"created_at": "Creation Time",
+				"updated_at": "Update Time",
+				"select_odd_row": "Select Odd Row",
+				"select_even_row": "Select Even Row",
+				"root_node": "RootNode",
+				"hour": "Hour",
+				"minute": "Minute",
+				"second": "Second",
+				"day": "Day",
+				"month": "Month",
+				"week": "Week"
+			}
+		},
+		"button": {
+			"edit": "Edit",
+			"delete": "Delete",
+			"add": "New",
+			"save": "Save",
+			"cancel": "Cancel",
+			"reset": "Reset",
+			"search": "Search",
+			"synchronize": "Synchronize API",
+			"download_template": "Download Template",
+			"import": "Import",
+			"export": "Export",
+			"submit": "Submit",
+			"return": "Return",
+			"yes": "Yes",
+			"no": "No",
+			"button_and_parameter": "ButtonAndParameter",
+			"add_sub_route": "AddSubRoute",
+			"switch_convenient_selection": "SwitchToConvenientSelection",
+			"switch_manual_input": "SwitchToManualInput",
+			"reset_password": "Reset",
+			"add_a_row": "Add a row",
+			"upload": "UploadFile",
+			"role_setting": "RoleSetting",
+			"add_sub_role": "AddSubRole",
+			"role_menu": "RoleMenu",
+			"role_api": "RoleApi",
+			"go_back": "Back",
+			"set_home_page": "SetHomePage",
+			"home_page": "HomePage",
+			"set_role_button": "SetRoleButton",
+			"reload_all_task": "ReloadTask",
+			"handling": "Handling...",
+			"start": "Start",
+			"stop": "Stop",
+			"log": "ExecuteLog",
+			"cron_express_builder": "CronExpressBuilder",
+			"hide_builder": "HideBuilder",
+			"show_builder": "ShowBuilder",
+			"apply_expression": "ApplyExpression",
+			"generated_expression": "GeneratedExpression",
+			"export_all": "ExportAll",
+			"export_current": "ExportCurrent"
+		},
+		"handle_message": {
+			"success": "Operation Successful",
+			"error": "Operation Failed",
+			"create_success": "Create Successfully",
+			"delete_success": "Delete Successfully",
+			"confirm_delete": "Are you sure you want to delete this?",
+			"delete_prompt": "Delete the task",
+			"confirm_reset_password": "Are you sure you want to reset the password?",
+			"reset_prompt": "Reset the password",
+			"upload_success": "File upload successful",
+			"upload_error": "File upload failed",
+			"cron_prompt_one": "Cron Expression Format: Second Minute Hour Day Month Week",
+			"cron_prompt_two": "Example: 0 0 12 * * ?  (12:00:00 PM, Every day)",
+			"cron_prompt_three": "Description of Wildcards: * (Every), ? (Not Specified), / (Interval), - (Range), , (Multiple Values)",
+			"cron_placeholder": "Please enter the cron expression, e.g.: 0 0 12 * * ?",
+			"file_path_placeholder": "Please enter the file path, e.g.: /dashboard/workplace",
+			"title_placeholder": "Please enter the title, e.g.: MenuManage",
+			"is_required": "is_required",
+			"select": "Select",
+			"connected": "Connected",
+			"disconnected": "Disconnected",
+			"realtime": "RealTimeLog",
+			"historical": "HistoricalLog",
+			"waiting_load_data": "Waiting for log data...",
+			"connecting": "Connecting to log service...",
+			"no_history_log": "No historical logs available",
+			"loading": "Loading...",
+			"show_more": "ShowMore",
+			"show_less": "ShowLess",
+			"previous": "Previous",
+			"next": "Next",
+			"page": "Page",
+			"execution_success": "Execution Success",
+			"execution_failed": "Execution Failed"
+		},
+		"page": {
+			"total": "Total",
+			"items": "Items"
+		}
+	}
+}

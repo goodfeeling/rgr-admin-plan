@@ -1,0 +1,213 @@
+{
+	"table": {
+		"columns": {
+			"api": {
+				"path": "路径",
+				"api_group": "所属组",
+				"method": "请求方法",
+				"description": "描述"
+			},
+			"menu": {
+				"menu_id": "菜单ID",
+				"title": "菜单名称",
+				"icon": "图标",
+				"name": "路由名称",
+				"path": "路由路径",
+				"component": "组件路径",
+				"sort": "排序",
+				"parent_id": "父级ID",
+				"keep_alive": "KeepAlive",
+				"default_menu": "默认菜单",
+				"hidden": "隐藏",
+				"description": "描述"
+			},
+			"menu_group": {
+				"name": "名称",
+				"sort": "排序",
+				"path": "路由路径",
+				"status": "状态"
+			},
+			"menu_btn": {
+				"name": "按钮名称",
+				"desc": "描述"
+			},
+			"menu_parameter": {
+				"type": "参数类型",
+				"key": "参数键",
+				"value": "参数值"
+			},
+			"operation": {
+				"ip": "IP地址",
+				"path": "请求路径",
+				"method": "请求方法",
+				"status": "状态码",
+				"latency": "延迟(ms)",
+				"agent": "代理",
+				"error": "错误信息",
+				"body": "请求体",
+				"resp": "响应体"
+			},
+			"user": {
+				"user_name": "用户名",
+				"nick_name": "昵称",
+				"phone": "手机号码",
+				"status": "状态",
+				"email": "邮箱",
+				"roles": "角色",
+				"avatar": "头像"
+			},
+			"file": {
+				"file_origin_name": "文件名称",
+				"storage_engine": "存储方式"
+			},
+			"role": {
+				"role_id": "角色ID",
+				"name": "角色名称",
+				"label": "角色标签",
+				"order": "排序",
+				"description": "描述",
+				"status": "状态",
+				"parent_id": "父级角色ID"
+			},
+			"dictionary_detail": {
+				"label": "展示值",
+				"value": "字典值",
+				"extend": "扩展值",
+				"status": "状态",
+				"type": "类型",
+				"sort": "排序"
+			},
+			"dictionary": {
+				"name": "名称",
+				"type": "类型",
+				"is_generate_file": "是否生成常量文件",
+				"status": "状态",
+				"desc": "描述"
+			},
+			"schedule": {
+				"task_name": "任务名称",
+				"cron_expression": "cron表达式",
+				"task_description": "任务描述",
+				"task_type": "任务类型",
+				"status": "状态",
+				"last_execute_time": "上次执行时间",
+				"next_execute_time": "下次执行时间",
+				"exec_type": "执行类型",
+				"task_params": "任务参数",
+				"url": "Url",
+				"method": "请求方法",
+				"timeout": "超时时间 (秒)",
+				"function_name": "函数名称",
+				"days_to_keep": "保留天数",
+				"script_path": "脚本路径",
+				"arguments": "参数 (可选)",
+				"work_dir": "工作目录 (可选)"
+			},
+			"task_log": {
+				"task_id": "任务ID",
+				"execute_time": "执行时间",
+				"execute_result": "执行结果",
+				"execute_duration": "执行耗时",
+				"error_message": "错误信息",
+				"created_at": "记录时间"
+			},
+			"common": {
+				"operation": "操作",
+				"created_at": "更新时间",
+				"updated_at": "更新时间",
+				"select_odd_row": "请选择奇数行",
+				"select_even_row": "请选择偶数行",
+				"root_node": "根节点",
+				"hour": "时",
+				"minute": "分",
+				"second": "秒",
+				"day": "日",
+				"month": "月",
+				"week": "周"
+			}
+		},
+		"button": {
+			"edit": "编辑",
+			"delete": "删除",
+			"add": "新增",
+			"save": "保存",
+			"cancel": "取消",
+			"reset": "重置",
+			"search": "搜索",
+			"synchronize": "同步接口",
+			"download_template": "下载模板",
+			"import": "导入",
+			"export": "导出",
+			"submit": "提交",
+			"return": "取消",
+			"yes": "是",
+			"no": "否",
+			"button_and_parameter": "按钮与参数",
+			"add_sub_route": "添加子路由",
+			"switch_convenient_selection": "切换到便捷选择",
+			"switch_manual_input": "切换到手动输入",
+			"reset_password": "重置",
+			"add_a_row": "添加一行",
+			"upload": "上传文件",
+			"role_setting": "权限设置",
+			"add_sub_role": "添加子角色",
+			"role_menu": "角色菜单",
+			"role_api": "角色API",
+			"go_back": "返回",
+			"set_home_page": "设为首页",
+			"home_page": "首页",
+			"set_role_button": "配置权限按钮",
+			"reload_all_task": "重载任务",
+			"handling": "处理中...",
+			"start": "启动",
+			"stop": "停止",
+			"log": "执行日志",
+			"cron_express_builder": "Cron生成器",
+			"hide_builder": "隐藏生成器",
+			"show_builder": "显示生成器",
+			"apply_expression": "应用表达式",
+			"generated_expression": "生成的表达式",
+			"export_all": "导出全部",
+			"export_current": "导出当前查询数据"
+		},
+		"handle_message": {
+			"success": "操作成功",
+			"error": "操作失败",
+			"add_success": "添加成功",
+			"delete_success": "删除成功",
+			"confirm_delete": "删除后无法恢复，请谨慎操作！",
+			"delete_prompt": "删除提示",
+			"confirm_reset_password": "确定重置密码吗？",
+			"reset_prompt": "重置提示",
+			"upload_success": "文件上传成功",
+			"upload_error": "文件上传失败",
+			"cron_prompt_one": "Cron表达式格式: 秒 分 时 日 月 周",
+			"cron_prompt_two": "例如: '0 0 12 * * ?' 表示每天中午12点触发",
+			"cron_prompt_three": "通配符说明: * (每), ? (不指定), / (间隔), - (范围), , (多个值)",
+			"cron_placeholder": "请输入cron表达式，例如: 0 0 12 * * ?",
+			"file_path_placeholder": "请输入文件路径，例如:  /dashboard/workplace",
+			"title_placeholder": "请输入标题，例如: MenuManage",
+			"is_required": "是必填的",
+			"select": "请选择",
+			"connected": "已连接",
+			"disconnected": "已断开",
+			"realtime": "实时日志",
+			"historical": "历史日志",
+			"waiting_load_data": "等待日志数据...",
+			"connecting": "正在连接到日志服务...",
+			"no_history_log": "暂无历史日志",
+			"loading": "加载中...",
+			"show_more": "展开",
+			"show_less": "收起",
+			"previous": "上一页",
+			"next": "下一页",
+			"page": "第",
+			"execution_success": "执行成功",
+			"execution_failed": "执行失败"
+		},
+		"page": {
+			"total": "共",
+			"items": "条"
+		}
+	}
+}

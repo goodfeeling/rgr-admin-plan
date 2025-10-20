@@ -1,0 +1,299 @@
+{
+	"sys": {
+		"api": {
+			"operationSuccess": "操作成功",
+			"operationFailed": "操作失败",
+			"errorTip": "错误提示",
+			"successTip": "成功提示",
+			"errorMessage": "操作失败,系统异常!",
+			"timeoutMessage": "登录超时,请重新登录!",
+			"apiTimeoutMessage": "接口请求超时,请刷新页面重试!",
+			"apiRequestFailed": "请求出错，请稍候重试",
+			"networkException": "网络异常",
+			"networkExceptionMsg": "网络异常，请检查您的网络连接是否正常!",
+
+			"errMsg401": "用户没有权限（令牌、用户名、密码错误）!",
+			"errMsg403": "用户得到授权，但是访问是被禁止的。!",
+			"errMsg404": "网络请求错误,未找到该资源!",
+			"errMsg405": "网络请求错误,请求方法未允许!",
+			"errMsg408": "网络请求超时!",
+			"errMsg500": "服务器错误,请联系管理员!",
+			"errMsg501": "网络未实现!",
+			"errMsg502": "网络错误!",
+			"errMsg503": "服务不可用，服务器暂时过载或维护!",
+			"errMsg504": "网络超时!",
+			"errMsg505": "http版本不支持该请求!"
+		},
+		"login": {
+			"backSignIn": "返回",
+			"signInFormTitle": "登录到您的账户",
+			"mobileSignInFormTitle": "手机登录",
+			"qrSignInFormTitle": "二维码登录",
+			"signUpFormTitle": "注册",
+			"forgetFormTitle": "重置密码",
+			"signInPrimaryTitle": "欢迎回来",
+			"signInSecondTitle": "开箱即用的中后台管理系统",
+			"signInDesc": "输入您的个人详细信息开始使用！",
+			"policy": "我同意xxx隐私政策",
+			"scanSign": "扫码后点击'确认'，即可完成登录",
+			"forgetFormSecondTitle": "请输入与您的帐户关联的电子邮件地址，我们将通过电子邮件向您发送重置密码的链接。",
+			"captcha": "验证码",
+			"loginButton": "登录",
+			"registerButton": "注册",
+			"rememberMe": "记住我",
+			"forgetPassword": "忘记密码?",
+			"otherSignIn": "其他登录方式",
+			"sendSmsButton": "发送验证码",
+			"sendSmsText": "{{second}}秒后重试",
+			"sendEmailButton": "发送邮件",
+
+			"loginSuccessTitle": "登录成功",
+			"loginSuccessDesc": "欢迎回来",
+
+			"captchaPlaceholder": "请输入验证码",
+			"accountPlaceholder": "请输入账号",
+			"passwordPlaceholder": "请输入密码",
+			"confirmPasswordPlaceholder": "请输入确认密码",
+			"emaildPlaceholder": "请输入邮箱",
+			"smsPlaceholder": "请输入验证码",
+			"mobilePlaceholder": "请输入手机号码",
+			"policyPlaceholder": "勾选后才能注册",
+			"diffPwd": "两次输入密码不一致",
+
+			"userName": "账号",
+			"password": "密码",
+			"newPassword": "新密码",
+			"confirmPassword": "确认密码",
+			"email": "邮箱",
+			"smsCode": "短信验证码",
+			"mobile": "手机号码",
+
+			"registerAndAgree": "注册即我同意",
+			"termsOfService": " 服务条款 ",
+			"privacyPolicy": " 隐私政策 ",
+			"logout": "退出",
+			"signInFormDescription": "输入您的账号登录到您的账户",
+			"resetPasswordDescription": "请输入新密码进行重置",
+			"noAccount": "没有账号？",
+			"resetPasswordRequestToYourEmail": "已经给您的邮箱发送重置请求，请注意查看"
+		},
+		"tab": {
+			"fullscreen": "内容全屏",
+			"refresh": "刷新",
+			"close": "关闭标签页",
+			"closeOthers": "关闭其它标签页",
+			"closeAll": "关闭所有标签页",
+			"closeLeft": "关闭左侧标签页",
+			"closeRight": "关闭右侧标签页"
+		},
+		"menu": {
+			"pages": "页面",
+			"others": "其他",
+			"ui": "UI",
+			"custom_ui_components": "自定义UI组件",
+			"dashboard": "仪表板",
+			"workbench": "工作台",
+			"analysis": "分析",
+			"management": "系统管理",
+			"user": {
+				"index": "用户",
+				"profile": "个人资料",
+				"account": "账户设置",
+				"switch_role": "切换角色"
+			},
+			"system": {
+				"index": "系统",
+				"admin": "超级管理员",
+				"role": "角色管理",
+				"user": "用户管理",
+				"api": "接口管理",
+				"dictionary": "字典管理",
+				"dictionary_group": "字典分组管理",
+				"operation": "操作日志",
+				"menu": "菜单管理",
+				"menu_group": "菜单分组",
+				"file": "文件管理",
+				"tools": "系统工具",
+				"schedule": "调度任务",
+				"setting": "系统配置",
+				"from_create": "表单生成器",
+				"menu_btn": "可控按钮设置",
+				"menu_parameter": "菜单参数设置"
+			},
+			"favorites": "收藏夹",
+			"current_role": "当前角色",
+			"blog": "博客",
+			"components": "组件",
+			"icon": "图标",
+			"animate": "动画",
+			"scroll": "滚动",
+			"markdown": "Markdown",
+			"editor": "富文本",
+			"i18n": "多语言",
+			"upload": "上传",
+			"chart": "图表",
+			"toast": "Toast",
+			"functions": "功能",
+			"clipboard": "剪贴板",
+			"token_expired": "Token失效",
+			"menulevel": {
+				"index": "多级菜单",
+				"1a": "多级菜单 1a",
+				"1b": {
+					"index": "多级菜单 1b",
+					"2a": "多级菜单 2a",
+					"2b": {
+						"index": "多级菜单 2b",
+						"3a": "多级菜单 3a",
+						"3b": "多级菜单 3b"
+					}
+				}
+			},
+			"disabled": "项目禁用",
+			"label": "项目标签",
+			"frame": "链接",
+			"external_link": "外链",
+			"iframe": "内嵌",
+			"blank": "空白",
+			"calendar": "日历",
+			"kanban": "看板",
+			"error": {
+				"index": "异常页",
+				"403": "403",
+				"404": "404",
+				"500": "500"
+			}
+		},
+		"docs": "文档",
+		"settings": {
+			"title": "设置",
+			"mode": "模式",
+			"layout": "布局",
+			"stretch": "拉伸",
+			"stretchTip": "仅在大分辨率下可用 > 1600px (xl)",
+			"presetThemes": "预设主题",
+			"font": "字体",
+			"family": "字体系列",
+			"size": "字体大小",
+			"page": "页面",
+			"breadcrumb": "面包屑",
+			"multiTab": "多标签",
+			"darkSidebar": "暗色侧边栏",
+			"accordion": "手风琴菜单",
+			"fullscreen": "全屏",
+			"exitFullscreen": "退出全屏"
+		},
+
+		"account": {
+			"general": "资料设置",
+			"notifications": "通知设置",
+			"security": "密码修改",
+			"username": "用户名",
+			"phone": "手机号码",
+			"email": "邮箱",
+			"nickname": "昵称",
+			"old_password": "旧密码",
+			"new_password": "新密码",
+			"confirm_new_password": "确认新密码"
+		},
+		"config": {
+			"tabs": {
+				"site": "站点配置",
+				"server": "服务配置",
+				"email": "邮件配置",
+				"postgres": "Postgres配置",
+				"redis": "Redis配置",
+				"cors": "CORS配置",
+				"jwt": "JWT配置",
+				"zap": "Zap配置",
+				"aliyun_oss": "阿里云OSS配置",
+				"rabbitmq": "RabbitMQ配置",
+				"native_storage": "本地存储配置",
+				"captcha": "验证码配置"
+			},
+			"columns": {
+				"aliyun_oss": {
+					"access_key_id": "访问密钥ID",
+					"access_key_secret": "访问密钥密码",
+					"base_url": "基础URL",
+					"bucket_name": "存储桶名称",
+					"ram_role_arn": "RAM角色ARN",
+					"security_region_id": "安全区域ID",
+					"security_service_address": "安全服务地址"
+				},
+				"cors": {
+					"allowed_headers": "允许的请求头",
+					"allowed_methods": "允许的方法",
+					"allowed_origins": "允许的来源"
+				},
+				"postgres": {
+					"conn_max_lifetime": "连接最大生命周期",
+					"host": "主机",
+					"max_idle_conns": "最大空闲连接数",
+					"max_open_conns": "最大打开连接数",
+					"name": "数据库名",
+					"password": "密码",
+					"port": "端口",
+					"sslmode": "SSL模式",
+					"user": "用户"
+				},
+				"jwt": {
+					"access_secret": "访问密钥",
+					"access_time_minute": "访问时间（分钟）",
+					"refresh_secret": "刷新密钥",
+					"refresh_time_hour": "刷新时间（小时）",
+					"reset_secret": "重置密码密钥"
+				},
+				"native_storage": {
+					"access_path": "访问路径",
+					"base_url": "基础URL",
+					"upload_dir": "上传目录"
+				},
+				"rabbitmq": {
+					"exchange": "交换机",
+					"queue": "队列",
+					"url": "链接"
+				},
+				"redis": {
+					"db": "DB",
+					"host": "主机",
+					"password": "密码",
+					"pool_size": "连接池大小",
+					"port": "端口"
+				},
+				"server": {
+					"database": "数据库",
+					"event_bus": "事件总线",
+					"port": "端口",
+					"storage_engine": "存储引擎",
+					"limit_time": "限流时间",
+					"limit_rate": "限流次数",
+					"single_sign_on": "开启单点登录",
+					"frontend_url": "前端URL"
+				},
+				"site": {
+					"favicon": "网站图标",
+					"login_img": "登录图片",
+					"logo": "标志",
+					"name": "名称"
+				},
+				"zap": {
+					"dirname": "目录名",
+					"encode_level": "编码级别",
+					"encoding": "编码方式",
+					"level": "级别",
+					"log_in_console": "是否在控制台打印",
+					"max_age": "最长保存时间",
+					"stacktrace_key": "堆栈跟踪键"
+				},
+				"captcha": {
+					"height": "高度",
+					"width": "宽度",
+					"length": "长度",
+					"complexity": "复杂度",
+					"timeout_minute": "超时时间（分钟）"
+				}
+			}
+		}
+	}
+}

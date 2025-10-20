@@ -1,0 +1,25 @@
+# IDE Folders and Files
+.idea
+.DS_Store
+.env
+
+
+*.txt
+*.log
+
+microservices
+config.json
+
+microservices-go
+app-microservice
+main
+
+coverage.html
+coverage.out
+coverage_filtered.out
+
+uploads
+logs
+config.yaml
+
+!config.example.yaml

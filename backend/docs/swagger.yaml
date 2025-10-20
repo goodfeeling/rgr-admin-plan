@@ -1,0 +1,799 @@
+basePath: /v1
+definitions:
+  auth.AccessTokenRequest:
+    properties:
+      refreshToken:
+        type: string
+    required:
+    - refreshToken
+    type: object
+  auth.DataSecurityAuthenticated:
+    properties:
+      expirationAccessDateTime:
+        type: string
+      expirationRefreshDateTime:
+        type: string
+      jwtAccessToken:
+        type: string
+      jwtRefreshToken:
+        type: string
+    type: object
+  auth.DataUserAuthenticated:
+    properties:
+      email:
+        type: string
+      header_img:
+        type: string
+      id:
+        type: integer
+      nick_name:
+        type: string
+      phone:
+        type: string
+      status:
+        type: boolean
+      user_name:
+        type: string
+      uuid:
+        type: string
+    type: object
+  auth.LoginRequest:
+    properties:
+      password:
+        type: string
+      user_name:
+        type: string
+    required:
+    - password
+    - user_name
+    type: object
+  auth.RegisterRequest:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+      user_name:
+        type: string
+    required:
+    - email
+    - password
+    - user_name
+    type: object
+  auth.SecurityAuthenticatedUser:
+    properties:
+      security:
+        $ref: '#/definitions/auth.DataSecurityAuthenticated'
+      userinfo:
+        $ref: '#/definitions/auth.DataUserAuthenticated'
+    type: object
+  auth.SecurityRegisterUser:
+    properties:
+      data:
+        $ref: '#/definitions/auth.DataUserAuthenticated'
+    type: object
+  controllers.CommonResponseBuilder:
+    type: object
+  controllers.CommonResponseBuilder-role_ResponseRole:
+    type: object
+  controllers.CommonResponseBuilder-user_ResponseUser:
+    type: object
+  domain.CommonResponse-array_role_RoleTree:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/role.RoleTree'
+        type: array
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+  domain.CommonResponse-array_user_ResponseUser:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/user.ResponseUser'
+        type: array
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+  domain.CommonResponse-auth_SecurityAuthenticatedUser:
+    properties:
+      data:
+        $ref: '#/definitions/auth.SecurityAuthenticatedUser'
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+  domain.CommonResponse-auth_SecurityRegisterUser:
+    properties:
+      data:
+        $ref: '#/definitions/auth.SecurityRegisterUser'
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+  domain.CommonResponse-github_com_gbrayhan_microservices-go_src_domain_sys_files_SysFiles:
+    properties:
+      data:
+        $ref: '#/definitions/github_com_gbrayhan_microservices-go_src_domain_sys_files.SysFiles'
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+  domain.CommonResponse-int:
+    properties:
+      data:
+        type: integer
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+  domain.CommonResponse-role_RoleNode:
+    properties:
+      data:
+        $ref: '#/definitions/role.RoleNode'
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+  domain.CommonResponse-string:
+    properties:
+      data:
+        type: string
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+  domain.CustomTime:
+    properties:
+      time.Time:
+        type: string
+    type: object
+  domain.DataFilters:
+    properties:
+      dataRanges:
+        items:
+          $ref: '#/definitions/domain.DateRangeFilter'
+        type: array
+      likeFilters:
+        additionalProperties:
+          items:
+            type: string
+          type: array
+        type: object
+      matches:
+        additionalProperties:
+          items:
+            type: string
+          type: array
+        type: object
+      page:
+        type: integer
+      pageSize:
+        type: integer
+      sortBy:
+        items:
+          type: string
+        type: array
+      sortDirection:
+        $ref: '#/definitions/domain.SortDirection'
+    type: object
+  domain.DateRangeFilter:
+    properties:
+      end:
+        type: string
+      field:
+        type: string
+      start:
+        type: string
+    type: object
+  domain.PageList-array_role_ResponseRole:
+    properties:
+      filters:
+        $ref: '#/definitions/domain.DataFilters'
+      list:
+        items:
+          $ref: '#/definitions/role.ResponseRole'
+        type: array
+      page:
+        type: integer
+      page_size:
+        type: integer
+      total:
+        type: integer
+      total_page:
+        type: integer
+    type: object
+  domain.PageList-array_user_ResponseUser:
+    properties:
+      filters:
+        $ref: '#/definitions/domain.DataFilters'
+      list:
+        items:
+          $ref: '#/definitions/user.ResponseUser'
+        type: array
+      page:
+        type: integer
+      page_size:
+        type: integer
+      total:
+        type: integer
+      total_page:
+        type: integer
+    type: object
+  domain.SortDirection:
+    enum:
+    - asc
+    - desc
+    type: string
+    x-enum-varnames:
+    - SortAsc
+    - SortDesc
+  github_com_gbrayhan_microservices-go_src_domain_sys_files.SysFiles:
+    properties:
+      file_md5:
+        type: string
+      file_name:
+        type: string
+      file_path:
+        type: string
+      file_url:
+        type: string
+      id:
+        type: integer
+    type: object
+  role.NewRoleRequest:
+    properties:
+      description:
+        type: string
+      id:
+        type: integer
+      label:
+        type: string
+      name:
+        type: string
+      order:
+        type: integer
+      parent_id:
+        type: integer
+      status:
+        type: boolean
+    required:
+    - name
+    - parent_id
+    type: object
+  role.ResponseRole:
+    properties:
+      created_at:
+        $ref: '#/definitions/domain.CustomTime'
+      default_router:
+        type: string
+      description:
+        type: string
+      id:
+        type: integer
+      label:
+        type: string
+      name:
+        type: string
+      order:
+        type: integer
+      parent_id:
+        type: integer
+      status:
+        type: boolean
+      updated_at:
+        $ref: '#/definitions/domain.CustomTime'
+    type: object
+  role.RoleNode:
+    properties:
+      children:
+        items:
+          $ref: '#/definitions/role.RoleNode'
+        type: array
+      key:
+        type: string
+      path:
+        items:
+          type: integer
+        type: array
+      title:
+        type: string
+      value:
+        type: string
+    type: object
+  role.RoleTree:
+    properties:
+      children:
+        items:
+          $ref: '#/definitions/role.RoleTree'
+        type: array
+      created_at:
+        type: string
+      default_router:
+        type: string
+      description:
+        type: string
+      id:
+        type: integer
+      label:
+        type: string
+      name:
+        type: string
+      order:
+        type: integer
+      parent_id:
+        type: integer
+      path:
+        items:
+          type: integer
+        type: array
+      status:
+        type: boolean
+      updated_at:
+        type: string
+    type: object
+  user.NewUserRequest:
+    properties:
+      email:
+        type: string
+      header_img:
+        type: string
+      id:
+        type: integer
+      nick_name:
+        type: string
+      phone:
+        type: string
+      status:
+        type: boolean
+      user_name:
+        type: string
+    required:
+    - email
+    - user_name
+    type: object
+  user.ResponseUser:
+    properties:
+      created_at:
+        $ref: '#/definitions/domain.CustomTime'
+      email:
+        type: string
+      header_img:
+        type: string
+      id:
+        type: integer
+      nick_name:
+        type: string
+      phone:
+        type: string
+      status:
+        type: boolean
+      updated_at:
+        $ref: '#/definitions/domain.CustomTime'
+      user_name:
+        type: string
+      uuid:
+        type: string
+    type: object
+externalDocs:
+  description: OpenAPI
+  url: https://swagger.io/resources/open-api/
+host: localhost:8080
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: This is a sample server celler server.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Swagger Example API
+  version: "1.0"
+paths:
+  /v1/auth/access-token:
+    get:
+      consumes:
+      - application/json
+      description: refresh token
+      parameters:
+      - description: JSON Data
+        in: body
+        name: book
+        required: true
+        schema:
+          $ref: '#/definitions/auth.AccessTokenRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.CommonResponse-auth_SecurityAuthenticatedUser'
+      summary: refresh token
+      tags:
+      - refresh_token
+  /v1/auth/logout:
+    get:
+      consumes:
+      - application/json
+      description: user logout
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.CommonResponse-string'
+      summary: user logout
+      tags:
+      - logout
+  /v1/auth/signin:
+    get:
+      consumes:
+      - application/json
+      description: login
+      parameters:
+      - description: JSON Data
+        in: body
+        name: book
+        required: true
+        schema:
+          $ref: '#/definitions/auth.LoginRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.CommonResponse-auth_SecurityAuthenticatedUser'
+      summary: login godoc
+      tags:
+      - login
+  /v1/auth/signup:
+    get:
+      consumes:
+      - application/json
+      description: register new user
+      parameters:
+      - description: JSON Data
+        in: body
+        name: book
+        required: true
+        schema:
+          $ref: '#/definitions/auth.RegisterRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/domain.CommonResponse-auth_SecurityRegisterUser'
+            type: array
+      summary: register new user
+      tags:
+      - register user
+  /v1/role:
+    get:
+      consumes:
+      - application/json
+      description: get  all roles by where
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.CommonResponse-array_role_RoleTree'
+      summary: get all roles by
+      tags:
+      - roles
+    post:
+      consumes:
+      - application/json
+      description: create role
+      parameters:
+      - description: JSON Data
+        in: body
+        name: book
+        required: true
+        schema:
+          $ref: '#/definitions/role.NewRoleRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.CommonResponseBuilder'
+      summary: create role
+      tags:
+      - role create
+    put:
+      consumes:
+      - application/json
+      description: update role
+      parameters:
+      - description: JSON Data
+        in: body
+        name: book
+        required: true
+        schema:
+          additionalProperties: true
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/controllers.CommonResponseBuilder-role_ResponseRole'
+            type: array
+      summary: update role
+      tags:
+      - role
+  /v1/role/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: delete role by id
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.CommonResponse-int'
+      summary: delete role
+      tags:
+      - role
+    get:
+      consumes:
+      - application/json
+      description: get roles by id
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/role.ResponseRole'
+      summary: get roles
+      tags:
+      - roles
+  /v1/role/search:
+    get:
+      consumes:
+      - application/json
+      description: search roles by query
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.PageList-array_role_ResponseRole'
+      summary: search roles
+      tags:
+      - search roles
+  /v1/role/search-property:
+    get:
+      consumes:
+      - application/json
+      description: search by property
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              items:
+                type: string
+              type: array
+            type: array
+      summary: search by property
+      tags:
+      - search
+  /v1/role/tree:
+    get:
+      consumes:
+      - application/json
+      description: get tree roles
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.CommonResponse-role_RoleNode'
+      summary: get tree roles
+      tags:
+      - tree roles
+  /v1/upload/single:
+    post:
+      consumes:
+      - multipart/form-data
+      description: upload single file get file info
+      parameters:
+      - description: fileResource
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.CommonResponse-github_com_gbrayhan_microservices-go_src_domain_sys_files_SysFiles'
+      summary: single file upload
+      tags:
+      - upload
+  /v1/user:
+    get:
+      consumes:
+      - application/json
+      description: get  all users by where
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.CommonResponse-array_user_ResponseUser'
+      summary: get all users by
+      tags:
+      - users
+    post:
+      consumes:
+      - application/json
+      description: create user
+      parameters:
+      - description: JSON Data
+        in: body
+        name: book
+        required: true
+        schema:
+          $ref: '#/definitions/user.NewUserRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.CommonResponseBuilder'
+      summary: create user
+      tags:
+      - user create
+    put:
+      consumes:
+      - application/json
+      description: update userinfo
+      parameters:
+      - description: JSON Data
+        in: body
+        name: book
+        required: true
+        schema:
+          additionalProperties: true
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/controllers.CommonResponseBuilder-user_ResponseUser'
+            type: array
+      summary: update userinfo
+      tags:
+      - userinfo
+  /v1/user/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: delete user by id
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.CommonResponse-int'
+      summary: delete user
+      tags:
+      - user
+    get:
+      consumes:
+      - application/json
+      description: get users by id
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/user.ResponseUser'
+      summary: get users
+      tags:
+      - users
+  /v1/user/search:
+    get:
+      consumes:
+      - application/json
+      description: search users by query
+      parameters:
+      - description: page
+        in: query
+        name: page
+        type: string
+      - description: PageSize
+        in: query
+        name: pageSize
+        type: string
+      - description: sortBy
+        in: query
+        name: sortBy
+        type: string
+      - description: sortDirection
+        in: query
+        name: sortDirection
+        type: string
+      - description: status
+        in: query
+        name: status_match
+        type: string
+      - description: userName
+        in: query
+        name: user_name_like
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/domain.PageList-array_user_ResponseUser'
+      summary: search users
+      tags:
+      - search users
+  /v1/user/search-property:
+    get:
+      consumes:
+      - application/json
+      description: search by property
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              items:
+                type: string
+              type: array
+            type: array
+      summary: search by property
+      tags:
+      - search
+securityDefinitions:
+  BasicAuth:
+    type: basic
+swagger: "2.0"

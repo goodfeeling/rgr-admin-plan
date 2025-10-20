@@ -1,0 +1,79 @@
+# config.example.yaml - 配置文件模板
+aliyun_oss:
+  access_key_id: "your_aliyun_access_key_id"
+  access_key_secret: "your_aliyun_access_key_secret"
+  base_url: "http://your-bucket.oss-region.aliyuncs.com"
+  bucket_name: "your_bucket_name"
+  ram_role_arn: "acs:ram::account-id:role/role-name"
+  security_region_id: "oss-region"
+  security_service_address: "sts.region.aliyuncs.com"
+cors:
+  allowed_headers: Content-Type,Authorization,Accept,Origin,User-Agent,Cache-Control,X-Requested-With,X-File-Name,X-CSRF-Token,Accept-Encoding
+  allowed_methods: GET,POST,PUT,DELETE,PATCH,OPTIONS
+  allowed_origins: "*"
+postgres:
+  conn_max_lifetime: 300
+  host: "localhost"
+  max_idle_conns: 10
+  max_open_conns: 50
+  name: "database_name"
+  password: "database_password"
+  port: 5432
+  sslmode: disable
+  user: "database_user"
+jwt:
+  access_secret: "your_jwt_access_secret"
+  access_time_minute: 15
+  refresh_secret: "your_jwt_refresh_secret"
+  refresh_time_hour: 168
+  reset_secret: "your_jwt_set_secret"
+native_storage:
+  access_path: public
+  base_url: "http://localhost:8080"
+  upload_dir: uploads
+rabbitmq:
+  exchange: application_events
+  queue: application_events_queue
+  url: "amqp://user:password@host:port/"
+redis:
+  db: 0
+  host: "localhost"
+  password: "redis_password"
+  pool_size: 10
+  port: 6379
+server:
+  frontend_url: http://localhost:3001
+  database: postgres
+  event_bus: memory
+  port: 8080
+  storage_engine: local
+  limit_time: 1
+  limit_rate: 100
+  single_sign_on: false
+site:
+  favicon: "http://localhost:8080/public/favicon.png"
+  login_img: "http://localhost:8080/public/login.png"
+  logo: "http://localhost:8080/public/logo.png"
+  name: go-microservice
+zap:
+  dirname: logs
+  encode_level: LowercaseColorLevelEncoder
+  encoding: json
+  level: debug
+  log_in_console: true
+  max_age: 30
+  stacktrace_key: stacktrace
+email:
+  host: smtp.163.com
+  port: 587
+  username: your_email@163.com
+  password: your_authorization_code
+  from: your_email@163.com
+  ssl: false
+captcha:
+  enable: true
+  width: 120
+  height: 40
+  length: 4
+  timeout_minute: 5
+  complexity: 1

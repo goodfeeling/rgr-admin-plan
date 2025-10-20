@@ -1,0 +1,297 @@
+{
+	"sys": {
+		"api": {
+			"apiRequestFailed": "The interface request failed, please try again later!",
+			"apiTimeoutMessage": "The interface request timed out, please refresh the page and try again!",
+			"errMsg401": "The user does not have permission (token, user name, password error)!",
+			"errMsg403": "The user is authorized, but access is forbidden!",
+			"errMsg404": "Network request error, the resource was not found!",
+			"errMsg405": "Network request error, request method not allowed!",
+			"errMsg408": "Network request timed out!",
+			"errMsg500": "Server error, please contact the administrator!",
+			"errMsg501": "The network is not implemented!",
+			"errMsg502": "Network Error!",
+			"errMsg503": "The service is unavailable, the server is temporarily overloaded or maintained!",
+			"errMsg504": "Network timeout!",
+			"errMsg505": "The http version does not support the request!",
+			"errorMessage": "The operation failed, the system is abnormal!",
+			"errorTip": "Error Tip",
+			"networkException": "network anomaly",
+			"networkExceptionMsg": "Please check if your network connection is normal! The network is abnormal",
+			"operationFailed": "Operation failed",
+			"operationSuccess": "Operation Success",
+			"successTip": "Success Tip",
+			"timeoutMessage": "Login timed out, please log in again!"
+		},
+		"docs": "Document",
+		"login": {
+			"accountPlaceholder": "Please input username",
+			"backSignIn": "Back sign in",
+			"confirmPassword": "Confirm Password",
+			"confirmPasswordPlaceholder": "Please input confirm password",
+			"diffPwd": "The two passwords are inconsistent",
+			"email": "Email",
+			"emaildPlaceholder": "Please input email",
+			"forgetFormSecondTitle": "Please enter the email address associated with your account and We will email you a link to reset your password.",
+			"forgetFormTitle": "Reset password",
+			"forgetPassword": "Forget Password?",
+			"loginButton": "Sign in",
+			"loginSuccessDesc": "Welcome back",
+			"loginSuccessTitle": "Login successful",
+			"logout": "Logout",
+			"mobile": "Mobile",
+			"captcha": "Captcha",
+			"mobilePlaceholder": "Please input mobile",
+			"mobileSignInFormTitle": "Mobile sign in",
+			"otherSignIn": "Or continue with",
+			"password": "Password",
+			"newPassword": "New Password",
+			"passwordPlaceholder": "Please input password",
+			"policy": "I agree to the xxx Privacy Policy",
+			"policyPlaceholder": "Register after checking",
+			"privacyPolicy": " Privacy policy ",
+			"qrSignInFormTitle": "Qr code sign in",
+			"registerAndAgree": "By signing up, I agree to",
+			"registerButton": "Sign up",
+			"rememberMe": "Remember me",
+			"scanSign": "scanning the code to complete the login",
+			"sendEmailButton": "Send Email",
+			"sendSmsButton": "Send SMS code",
+			"sendSmsText": "Reacquire in {{second}}s",
+			"signInDesc": "Enter your personal details and get started!",
+			"signInFormTitle": "Login to your account",
+			"signInPrimaryTitle": "Hi, Welcome Back",
+			"signInSecondTitle": "Backstage management system",
+			"signInTitle": "",
+			"signUpFormTitle": "Sign up",
+			"smsCode": "SMS code",
+			"smsPlaceholder": "Please input sms code",
+			"termsOfService": " Terms of service ",
+			"userName": "Username",
+			"signInFormDescription": "Enter your username to login to your account",
+			"resetPasswordDescription": "Please enter a new password to reset it.",
+			"noAccount": "Don't have an account?",
+			"captchaPlaceholder": "Please input captcha",
+			"resetPasswordRequestToYourEmail": "A password reset request has been sent to your email. Please check it."
+		},
+		"menu": {
+			"pages": "Pages",
+			"others": "Others",
+			"ui": "UI",
+			"custom_ui_components": "Custom UI Components",
+			"dashboard": "Dashboard",
+			"analysis": "Analysis",
+			"animate": "Animate",
+			"blank": "Blank",
+			"system": {
+				"index": "System",
+				"admin": "Administrator",
+				"permission": "Permission",
+				"role": "Role",
+				"user": "User",
+				"api": "Api",
+				"dictionary": "Dictionary",
+				"dictionary_group": "DictionaryGroup",
+				"operation": "Operation",
+				"menu": "Menu",
+				"menu_group": "MenuGroup",
+				"file": "File",
+				"tools": "Tools",
+				"schedule": "Schedule",
+				"setting": "Configuration",
+				"from_create": "From",
+				"menu_btn": "Menu Button Setting",
+				"menu_parameter": "Menu Parameter Setting"
+			},
+			"favorites": "Favorites",
+			"current_role": "CurrentRole",
+			"blog": "Blog",
+			"calendar": "Calendar",
+			"chart": "Chart",
+			"clipboard": "Clipboard",
+			"components": "Components",
+			"disabled": "Item Disabled",
+			"editor": "Editor",
+			"error": {
+				"403": "403",
+				"404": "404",
+				"500": "500",
+				"index": "Error Page"
+			},
+			"external_link": "External Link",
+			"frame": "Item External",
+			"functions": "Functions",
+			"i18n": "Multi Language",
+			"icon": "Icon",
+			"iframe": "Iframe",
+			"kanban": "Kanban",
+			"label": "Item Label",
+			"management": "Management",
+			"markdown": "Markdown",
+			"menulevel": {
+				"1a": "Menu Level 1a",
+				"1b": {
+					"2a": "Menu Level 2a",
+					"2b": {
+						"3a": "Menu Level 3a",
+						"3b": "Menu Level 3b",
+						"index": "Menu Level 2b"
+					},
+					"index": "Menu Level 1b"
+				},
+				"index": "Menu Level"
+			},
+			"scroll": "Scroll",
+
+			"toast": "Toast",
+			"token_expired": "Token Expired",
+			"upload": "Upload",
+			"user": {
+				"account": "Account",
+				"index": "User",
+				"profile": "Profile",
+				"switch_role": "SwitchRole"
+			},
+			"workbench": "Workbench"
+		},
+		"settings": {
+			"accordion": "Accordion Menu",
+			"breadcrumb": "BreadCrumb",
+			"darkSidebar": "Dark Sidebar",
+			"exitFullscreen": "Exit FullScreen",
+			"family": "Family",
+			"font": "Font",
+			"fullscreen": "FullScreen",
+			"layout": "Layout",
+			"mode": "Mode",
+			"multiTab": "Multi Tab",
+			"page": "Page",
+			"presetThemes": "Preset Themes",
+			"size": "Size",
+			"stretch": "Stretch",
+			"stretchTip": "Only available at large resolutions > 1600px (xl)",
+			"title": "Settings"
+		},
+		"tab": {
+			"close": "Close",
+			"closeAll": "Close All",
+			"closeLeft": "Close Left",
+			"closeOthers": "Close Others",
+			"closeRight": "Close Right",
+			"fullscreen": "FullScreen",
+			"refresh": "Refresh"
+		},
+		"account": {
+			"general": "General",
+			"notifications": "Notifications",
+			"security": "Security",
+			"username": "Username",
+			"phone": "Phone",
+			"email": "Email",
+			"nickname": "Nickname",
+			"old_password": "Old Password",
+			"new_password": "New Password",
+			"confirm_new_password": "Confirm New Password"
+		},
+		"config": {
+			"tabs": {
+				"site": "Site",
+				"server": "Server",
+				"email": "Email",
+				"postgres": "Postgres",
+				"redis": "Redis",
+				"cors": "CORS",
+				"jwt": "JWT",
+				"zap": "Zap",
+				"aliyun_oss": "AliyunOSS",
+				"rabbitmq": "RabbitMQ",
+				"native_storage": "NativeStorage",
+				"captcha": "Captcha"
+			},
+			"columns": {
+				"aliyun_oss": {
+					"access_key_id": "AccessKeyId",
+					"access_key_secret": "AccessKeySecret",
+					"base_url": "BaseUrl",
+					"bucket_name": "BucketName",
+					"ram_role_arn": "RamRoleArn",
+					"security_region_id": "SecurityRegionId",
+					"security_service_address": "SecurityServiceAddress"
+				},
+				"cors": {
+					"allowed_headers": "AllowedHeaders",
+					"allowed_methods": "AllowedMethods",
+					"allowed_origins": "AllowedOrigins"
+				},
+				"postgres": {
+					"conn_max_lifetime": "ConnMaxLifetime",
+					"host": "Host",
+					"max_idle_conns": "MaxIdleConns",
+					"max_open_conns": "MaxOpenConns",
+					"name": "Name",
+					"password": "Password",
+					"port": "Port",
+					"sslmode": "Sslmode",
+					"user": "User"
+				},
+				"jwt": {
+					"access_secret": "AccessSecret",
+					"access_time_minute": "AccessTimeMinute",
+					"refresh_secret": "RefreshSecret",
+					"refresh_time_hour": "RefreshTimeHour",
+					"reset_secret": "ResetPasswordSecret"
+				},
+				"native_storage": {
+					"access_path": "AccessPath",
+					"base_url": "BaseUrl",
+					"upload_dir": "UploadDir"
+				},
+				"rabbitmq": {
+					"exchange": "Exchange",
+					"queue": "Queue",
+					"url": "Url"
+				},
+				"redis": {
+					"db": "Db",
+					"host": "Host",
+					"password": "Password",
+					"pool_size": "PoolSize",
+					"port": "Port"
+				},
+				"server": {
+					"database": "Database",
+					"event_bus": "EventBus",
+					"port": "Port",
+					"storage_engine": "StorageEngine",
+					"limit_time": "RequestTime(seconds)",
+					"limit_rate": "RequestCount",
+					"multi_login": "MultiLogin",
+					"single_sign_on": "SingleSignOn",
+					"frontend_url": "FrontendUrl"
+				},
+				"site": {
+					"favicon": "Favicon",
+					"login_img": "LoginImg",
+					"logo": "Logo",
+					"name": "Name"
+				},
+				"zap": {
+					"dirname": "Dirname",
+					"encode_level": "EncodeLevel",
+					"encoding": "Encoding",
+					"level": "Level",
+					"log_in_console": "LogInConsole",
+					"max_age": "MaxAge",
+					"stacktrace_key": "StacktraceKey"
+				},
+				"captcha": {
+					"height": "Height",
+					"width": "Width",
+					"length": "Length",
+					"complexity": "Complexity",
+					"timeout_minute": "Timeout(minutes)"
+				}
+			}
+		}
+	}
+}
